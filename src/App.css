@@ -1,0 +1,51 @@
+/* Default light mode styles */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* Add styles for other components to match dark mode */
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-gray-900 {
+  color: #1a202c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.dark .bg-gray-200 {
+  background-color: #4a5568;
+}
+
+.dark .text-blue-500 {
+  color: #63b3ed;
+}
+
+.dark .text-yellow-500 {
+  color: #f6e05e;
+}
+
+
+/* Add any other necessary styles for dark mode */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out;
+}
