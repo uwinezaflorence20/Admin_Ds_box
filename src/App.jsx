@@ -5,7 +5,7 @@ import AdminSignIn from "./Components/AdminSignIn";
 import AdminDashboard from "./Components/AdminDashboard";
 import AdminSignUp from "./Components/AdminSignUp";
 import ProtectedRoute from "./Components/ProtectedRoute"; // Import ProtectedRoute
-
+import MyReply from "./Components/MyReply";
 function App() {
   return (
     <div className="dark:bg-gray-800 dark:text-gray-200">
@@ -25,6 +25,7 @@ function App() {
           <Route path="/student" element={<Layout2 />}>
             <Route index element={<AdminDashboard />} />
             <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="myreply" element={<MyReply />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 import { FaRegCommentDots } from "react-icons/fa";
 
-const AdminDashboard = () => {
+const MyReply = () => {
   // State to track upvotes and comment visibility
   const [upvotes, setUpvotes] = useState(98);
   const [isCommentVisible, setIsCommentVisible] = useState(false);
@@ -39,7 +39,7 @@ const AdminDashboard = () => {
 
   return (
     
-    <div className="w-full mt-28 max-w-[90%] mx-auto my-6 border border-gray-300 rounded-lg p-6 bg-transparent">
+    <div className="w-full mt-28  max-w-[90%] mx-auto my-6 border border-gray-300 rounded-lg p-6 bg-transparent">
 
       <div className="flex text-sm text-gray-500 mb-4">
         <div className="size-10 rounded-full bg-sky-800">
@@ -55,14 +55,16 @@ const AdminDashboard = () => {
         <p
           onMouseEnter={() =>
             speakText(
-              
-         " I am writing to request an increase in the monthly living allowance for students at the University of Rwanda from RWF 40,000 to RWF 100,000. The current allowance has not kept pace with the rising costs of living, including significant increases in food and accommodation prices, which have made it increasingly difficult for students to meet their basic needs. "
+              "I am writing to request an increase in the monthly living allowance for students at the University of Rwanda from RWF 40,000 to RWF 100,000. The current allowance has not kept pace with the rising costs of living, including significant increases in food and accommodation prices, which have made it increasingly difficult for students to meet their basic needs."
             )
           }
           onMouseLeave={stopSpeech}
         >
-          I am writing to request an increase in the monthly living allowance for students at the University of Rwanda from RWF 40,000 to RWF 100,000. The current allowance has not kept pace with the rising costs of living, including significant increases in food and accommodation prices, which have made it increasingly difficult for students to meet their basic needs. Many students are struggling to afford essentials, which negatively impacts their academic performance and overall well-being. An adjustment to RWF 100,000 would provide much-needed financial support, allowing students to focus on their studies without the burden of financial stress. Thank you for considering this important request.
-        </p>
+        Thank you for your request regarding the increase of the monthly living allowance from RWF 40,000 to RWF 100,000. We acknowledge 
+the rising costs of living and the financial challenges many students are facing. While we are committed to supporting our students, 
+any adjustments to the allowance must be carefully considered within the context of our overall budget and available resources. We will 
+take your request into account as we continue to evaluate student support measures. Thank you for bringing this important issue to 
+our attention.</p>
       </div>
       <div className="flex gap-4 text-sm text-gray-500 mb-4 dark:text-gray-300">
         <span>11:30 PM · 14/11/2024</span>
@@ -147,4 +149,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default MyReply;

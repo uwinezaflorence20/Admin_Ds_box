@@ -65,7 +65,7 @@ const Student = () => {
                 role="menu"
               >
                 <div className="p-2">
-                  <NavLink to="mysuggestion">
+                  <NavLink to="myreply">
                     <span
                       className="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 dark:text-white dark:hover:bg-gray-600"
                       role="menuitem"
@@ -125,7 +125,7 @@ const Student = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t shadow-lg dark:bg-gray-800 dark:border-gray-700">
             <div className="p-4">
-              <NavLink to="mysuggestion">
+              <NavLink to="/myreply">
                 <span
                   className="block py-2 text-gray-700 hover:bg-gray-100 rounded-lg dark:text-white dark:hover:bg-gray-600"
                   onClick={() => setIsMobileMenuOpen(false)}

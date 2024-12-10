@@ -65,7 +65,7 @@ const AdminSignUp = () => {
   };
 
   return (
-    <div className="pt-2 px-4 sm:px-6 lg:px-8 dark:bg-gray-900">
+    <div className="pt-2 px-4 mb-8 sm:px-6 lg:px-8 dark:bg-gray-900">
       <div className="mx-auto max-w-screen-md mt-20 bg-sky-100 rounded-3xl px-4 py-16 sm:px-6 lg:px-8 dark:bg-gray-800 dark:border dark:border-gray-700">
         <div className="mx-auto max-w-lg text-center">
           <h1

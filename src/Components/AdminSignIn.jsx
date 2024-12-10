@@ -70,7 +70,7 @@ const AdminSignIn = () => {
   };
 
   return (
-    <div className="pt-2 px-4 sm:px-6 lg:px-8 dark:bg-gray-900">
+    <div className="pt-2 px-4 mb-8 sm:px-6 lg:px-8 dark:bg-gray-900">
       {/* Toast/Popup Message */}
       {toastMessage && (
         <div
